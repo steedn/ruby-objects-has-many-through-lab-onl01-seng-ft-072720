@@ -9,6 +9,6 @@ class Doctor
     @@all
   end
   def appointments
-    Appointment.all.select{ |find| find.self}
+    Appointment.all.select{ |find| find.appointment == self}
   end
 end
