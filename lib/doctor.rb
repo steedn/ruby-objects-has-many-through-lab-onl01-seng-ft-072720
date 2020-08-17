@@ -9,5 +9,6 @@ class Doctor
     @@all
   end
   def appointments
+    Appointment.all.select{ |find| find.self}
   end
 end
